@@ -15,12 +15,13 @@ header {
   padding-top: 2rem;
   margin: auto;
   align-items: center;
-  z-index: 1;
+  z-index: 4;
   padding-inline: 5%;
   position: fixed;
 }
 
 .logo {
+   filter: brightness(1%);
   width: 30vw;
 }
 
@@ -104,7 +105,7 @@ p {
 .main-text h2,
 .main-text p {
   font-family: "josefin sans", sans-serif;
-  line-height: 1.3rem;
+  line-height: 1.2;
   padding-bottom: 1rem;
 }
 
@@ -198,7 +199,16 @@ a {
   padding: 1rem 0 3rem 0;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 768px) {
+  header {
+    padding-inline: 15%;
+  }
+
+  .hero-text p {
+    font-size: 1.5vw;
+    line-height: 1.2;
+  }
+
   .logo {
     width: 50%;
   }
@@ -213,9 +223,10 @@ a {
   }
 
   .container {
+    width: 70%;
     flex-direction: row;
     text-align: start;
-    gap: 4rem;
+    gap: 2.5rem;
   }
 
   .hero-text {
@@ -223,7 +234,7 @@ a {
   }
 
   h1 {
-    font-size: 4vw;
+    font-size: 3.5vw;
     line-height: 1.2;
   }
 
@@ -233,6 +244,7 @@ a {
   }
 
   .main-container {
+    width: 70%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -242,6 +254,7 @@ a {
   }
 
   .main-container2 {
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -255,9 +268,14 @@ a {
   }
 
   .main-text {
-    width: 40%;
+    width: 35%;
+    font-size: 1vw;
     margin: 0;
     font-weight: 900;
+  }
+
+  .main-text p {
+    line-height: 1.2;
   }
 
   .side-container {
@@ -266,6 +284,7 @@ a {
   }
 
   .footer-container {
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -282,11 +301,11 @@ a {
   }
 
   nav {
-    padding-top: 7rem;
+    padding-top: 5rem;
   }
 
   .socials {
-    margin-top: 14rem;
+    margin-top: 12rem;
   }
 
   .socials p {

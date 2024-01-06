@@ -29,7 +29,7 @@ header {
   border-radius: 2rem;
   background: white;
   cursor: pointer;
-  font-family: "poppins";
+  font-family: "josefin sans";
 }
 
 #btn:hover {
@@ -55,7 +55,7 @@ header {
 
 .hero-text {
   width: 90%;
-  margin: 35% auto auto auto;
+  margin: 7rem auto auto auto;
   font-family: "josefin sans";
 }
 
